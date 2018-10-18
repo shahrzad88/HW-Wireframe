@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -14,19 +15,30 @@ header, nav, section, aside, footer {
     background: #ebebeb;
 }
 
-section {
+.box {
     float: left;
-    width: 495px;
-    overflow: auto;
+    width: 50%;
+    padding: 20px;
 }
 
-aside  {
-    width: 495px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section {
+    padding: 10px;
+}
+
+aside {
+    float: right;
 }
 
 article {
     color: #ebebeb;
     background: #777;
+    padding: 25px;
 }
 
 h1, p {
@@ -44,5 +56,4 @@ nav, section, aside {
 
 footer {
     margin: 10px 10px 0 10px;
-    clear: both;
 }
